@@ -21,6 +21,7 @@ class PortScanner(object):
              print e
           if result==0:
               print "[+] port is open %d"%port
+          s.close()
    ''' Thread is spawned for each socket connection given port
        range should be in limit defined for user in operating
        system  running the script.This can be checked with `ulimit -a`'''  
